@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='img/icone.jpeg')}}" type="image/x-icon">
+    <title>Gerar cartela</title>
+</head>
+
+<body>
+
+    <h1>Bem vindo(a)!<br> Bingo GNET+ 2022</h1>
+    <div class="paragrafo">
+        <p>
+            <a href="https://www.google.com/search?client=firefox-b-d&q=gnet%2B%20martins%20rn&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=AOaemvL7wOpmXp5IZPH9i8oTP9zKzLW4Cg:1639933140443&rflfq=1&num=10&rldimm=7744509070161458230&lqi=ChBnbmV0KyBtYXJ0aW5zIHJuWhIiEGduZXQrIG1hcnRpbnMgcm6SARJ0ZWxlY29tbXVuaWNhdGlvbnM&ved=2ahUKEwjL_amCq_D0AhUAGbkGHWJ8DigQvS56BAgDEDs&rlst=f#rlfi=hd:;si:7744509070161458230,l,ChBnbmV0KyBtYXJ0aW5zIHJuWhIiEGduZXQrIG1hcnRpbnMgcm6SARJ0ZWxlY29tbXVuaWNhdGlvbnM;mv:[[-6.0016903,-37.6149585],[-6.435871199999999,-38.0389412]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">
+                <img srcset="{{ url_for('static',filename='img/logo-gnet.jpeg')}}" alt="Elva dressed as a fairy" sizes="(max-width: 320px) 280px,(max-width: 480px) 440px,800px">
+            </a>
+        </p>
+    </div>
+
+
+    <form action="#" method="post">
+        <h2> Digite seu nome </h2>
+        <h1> <input type="text" name="user" id="text" maxlength="25"></h1>
+    </form>
+
+
+    <div class="botao" id="gerar">
+        <h2>Aperte no botão <br> para gerar a cartela </h2>
+        <a href="/cartela"><input class="cartelas" type="submit" value="GERAR !">
+        </a>
+    </div>
+    <script src="static/js/cartelas.js"></script>
+
+</body>
+
+</html>

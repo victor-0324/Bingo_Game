@@ -1,0 +1,169 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom, #023859d0, rgba(1, 165, 236, 0.774));
+}
+
+h1,
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30pt;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+p a {
+    text-decoration: none;
+    color: #f1c40f;
+}
+
+#squarefree {
+    font-family: Helvetica;
+    margin: 0 auto;
+    background: rgba(1, 189, 236, 0.842);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+#bingotable {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+    background: #08558b;
+}
+
+th,
+td {
+    font-family: Helvetica;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    width: 20%;
+}
+
+.orange {
+    background: rgba(1, 165, 236, 0.774);
+}
+
+table tr td button {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+table tr td button:hover {
+    /*aqui está a resolução aqui define a cor que o botão deve receber depois de clicar*/
+    background-color: #FF8001;
+    color: #023859d0;
+}
+
+table td button {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+div.box {
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 100px;
+    padding: 60px;
+    text-align: center;
+}
+
+div.box h2 {
+    font-size: 50pt;
+    color: #FF8001;
+    margin: 15px;
+}
+
+div.box button {
+    font-size: 16pt;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #08558b;
+    color: #FF8001;
+    cursor: cell;
+}
+
+label,
+input {
+    display: table;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    padding: 5px;
+}
+
+input {
+    border-radius: 2px solid #545454;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+input:fous {
+    border-bottom: 1px solid #08558b;
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #FFFFFF;
+    background-color: #08558b;
+    cursor: pointer
+}
+
+input[type="submit"]:hover {
+    background-color: #FF8001;
+    transition: .5s;
+}
+
+
+/* registra*/
+
+#register-container p {
+    margin-bottom: 5px;
+}
