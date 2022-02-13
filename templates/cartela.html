@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylo.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='img/image.png')}}" type="image/x-icon">
+    <title>Cartela</title>
+</head>
+<script>
+    function Marcar(id) {
+        document.getElementById(id).style.backgroundColor = "#46FA78"
+    }
+</script>
+<!-- vhgdhf -->
+
+<body onload="newCard()">
+    <div id="container">
+        <div id="header">
+            <p><br></p>
+            <p><br></p>
+            <a href="#" class="logo">Bem vindo (A) ! <br> <span>{{nome}} &#128513;</span></a>
+            <p><br></p>
+            <p><br></p>
+            <!-- <p><img srcset="{{ url_for('static',filename='img/image.png')}}"> -->
+            </p>
+        </div>
+        <div id="content">
+            <table class="box" id="bingotable">
+                <tr>
+                    <th class="orange">B</th>
+                    <th class="orange">I</th>
+                    <th class="orange">N</th>
+                    <th class="orange">G</th>
+                    <th class="orange">O</th>
+                </tr>
+                <tr>
+                    <td id="square0"> <button id="b1" class="btn05" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square1"> <button id="b2" class="btn06" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square2"> <button id="b3" class="btn11" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square3"> <button id="b4" class="btn16" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square4"> <button id="b5" class="btn21" OnClick="Marcar(this.id)">00</button></td>
+                </tr>
+                <tr>
+                    <td id="square5"> <button id="b6" class="btn04" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square6"> <button id="b7" class="btn07" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square7"> <button id="b8" class="btn12" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square8"> <button id="b9" class="btn17" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square9"> <button id="b10" class="btn22" OnClick="Marcar(this.id)">00</button></td>
+                </tr>
+                <tr>
+                    <td id="square10"> <button id="b11" class="btn03" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square11"> <button id="b12" class="btn08" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="squarefree">&#127808;</td>
+                    <td id="square12"> <button id="b13" class="btn13" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square13"> <button id="b14" class="btn18" OnClick="Marcar(this.id)">00</button></td>
+                </tr>
+                <tr>
+                    <td id="square14"> <button id="b15" class="btn02" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square15"> <button id="b16" class="btn09" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square16"> <button id="b17" class="btn14" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square17"> <button id="b18" class="btn19" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square18"> <button id="b19" class="btn23" OnClick="Marcar(this.id)">00</button></td>
+                </tr>
+                <tr>
+                    <td id="square19"> <button id="b20" class="btn01" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square20"> <button id="b21" class="btn10" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square21"> <button id="b22" class="btn15" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square22"> <button id="b23" class="btn20" OnClick="Marcar(this.id)">00</button></td>
+                    <td id="square23"> <button id="b24" class="btn24" OnClick="Marcar(this.id)">00</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="botao">
+            <button class="gerador">Gerar a cartela</button>
+            <!--<audio controls>
+                    <source src="{{url_for('static',filename='music/audio.mp3')}}" type="audio/mpeg">
+                    <source src="{{url_for('static',filename='music/audio.mp3')}}" type="audio/ogg">
+                </audio>-->
+        </div>
+        <script src="/static/js/cartelas.js"></script>
+</body>
+
+</html>
